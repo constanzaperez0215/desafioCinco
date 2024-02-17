@@ -1,0 +1,50 @@
+#container{
+    border: 2px solid black;
+    width: 80%;
+    text-align: center;
+    background-color: rgb(211, 211, 211);
+    padding: 20px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#input{
+    width: 90%;
+}
+
+.nTarea{
+    text-align: left;
+    padding-left: 10px;
+}
+.grid {  display: grid;
+    grid-template-columns: 0.7fr 1.3fr;
+    grid-template-rows: 0.2fr;
+    grid-auto-columns: 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "totales lista-de-tareas";
+  }
+
+  .totales { grid-area: totales; }
+
+  .lista-de-tareas {
+    grid-area: lista-de-tareas;
+
+ }
+
+
+#totales{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    width: 30%;
+}
+
+th{
+    width: 20px;
+}
+
+
+
